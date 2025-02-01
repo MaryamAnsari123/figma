@@ -1,4 +1,4 @@
-//ALL PRODUCTS PAGE (SHOW ALL PRODUCTS IN THIS PAGE)
+// Sofas
 
 "use client";  //  This makes it a client component
 
@@ -12,14 +12,14 @@ import Join from "../Components/Join";
 import Comp1 from "../Components/Comp1";
 import { useEffect, useState } from "react";
 
-export default function Allproduct(){
+export default function Sofa(){
   const [details, setDetails] = useState<any[]>([]);
   const { wishlist, addToWishlist, removeFromWishlist } = useWishlist();
 
   useEffect(() => {
     async function fetchData() {
       const query = await client.fetch(
-        `*[_type == "product"]{
+        `*[_type == "product" && "sofas" in tags]{
           _id,
           name,
           price,
@@ -39,7 +39,7 @@ export default function Allproduct(){
     <div className="w-[320px] md:w-full mt-20">
       <div className="justify-items-center md:px-12">
         <h1 className="lg:text-4xl text-3xl underline animate-bounce font-bold mb-10">
-          All Product
+          Our Sofa Collection
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 

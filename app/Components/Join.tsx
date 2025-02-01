@@ -1,10 +1,11 @@
+// JOIN.TSX COMPONENT
 import { CircleCheck } from 'lucide-react'
 import React from 'react'
 
 const Join = () => {
   return (
-    <div className='justify-items-center mb-20 md:mt-32 p-2'>
-      <div className="relative lg:w-[1440px] w-[340px] lg:h-[444px] h-[370px] bg-cover 
+    <div className='justify-items-center mb-20 md:mt-32 lg:mt-3 p-2'>
+      <div className="relative lg:w-[1440px] md:w-[680px] w-[340px] lg:h-[444px] h-[370px] bg-cover 
       bg-center bg-[url('/image/join.png')]">
 
         <div className='lg:w-[494px] lg:h-[265px] w-[329px] h-[330px] text-white
@@ -32,10 +33,10 @@ const Join = () => {
              <div className='flex justify-center items-center lg:mt-10 mt-6 text-sm lg:text-base'>
 
                 <input type='text' placeholder='your@email.com' 
-                className='p-3 lg:w-[254px] lg:h-[48px] w-[174px] h-[44px]' />
-                <p className='lg:w-[118px] lg:h-[48px] w-[98px] h-[44px] bg-[#2A254B] p-3 text-center text-sm'>
+                className='p-3 lg:w-[254px] border-2 rounded-l-md lg:h-[48px] w-[174px] h-[44px]' />
+                <button className='font-bold lg:w-[118px] rounded-r-md hover:bg-green-500 lg:h-[48px] w-[98px] h-[44px] bg-[#2A254B] p-3 text-center text-sm'>
                 Sign up
-                </p>
+                </button>
              </div>
 
              </div>

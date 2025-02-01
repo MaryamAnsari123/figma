@@ -1,9 +1,12 @@
+// DEKSTOP HERO SECTION
+import Link from 'next/link'
 import React from 'react'
 
 const Hero = () => {
   return (
     <div className='justify-items-center'>
-      <div className="relative w-full h-[704px] mt-[10px] bg-cover bg-[url('/image/herobg.png')]">
+      <div className="relative w-[1440px] mt-[10px] bg-cover bg-center
+       bg-[url('/image/herobg.png')] opacity-100 bg-no-repeat h-screen">
          
          {/* White div */}
         <div className=' flex-col justify-center items-center gap-[70px]
@@ -22,9 +25,11 @@ const Hero = () => {
       
 
         <div className='ml-[56px] mt-36'>
-            <button className='bg-[#F9F9F9] py-4 px-8 font-medium text-base'>
+        <Link href="/Allproducts">
+            <button className='bg-[#F9F9F9] rounded-md hover:bg-blue-200 border-2 animate-bounce py-4 px-8 font-medium text-base'>
                 View Collection
             </button>
+            </Link>
         </div>
         </div>
       </div>
